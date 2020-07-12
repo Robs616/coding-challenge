@@ -1,0 +1,38 @@
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+
+			
+
+			
+			<div class="col-lg-4 col-xl-4 text-center section-result-table order-2 order-lg-1">
+				<h4>Dernières Recherches</h4>
+				<table class="table table-dark table-bordered">
+  					<thead>
+						<tr>
+							<th scope="col">RECHERCHE</th>
+							<th scope="col">RÉSULTAT</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						{% for result in results %}
+						<tr>
+							<td>{{ result.search }}</td>
+							<td>{{ result.result }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col-lg-8 col-xl-8 text-center section-result-ninjify order-1 order-lg-2 mb-5"></div>
+
+
+
+
+
+
+{% endblock %}

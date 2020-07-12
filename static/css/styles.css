@@ -1,0 +1,42 @@
+/* MAIN STYLE */
+body{background-color:black;overflow:none;}
+
+h1,h2,span{
+	color:white;
+}
+
+
+/* HEADER  STYLE */
+.section_header{
+	background-image:url('/static/img/header.jpg');
+	padding-top: 125px;
+    padding-bottom: 125px;
+    background-position: center;
+	margin-bottom:15px;
+	
+}
+
+.section_header h1{
+	font-family: "Roboto Condensed";
+    letter-spacing: 5px;
+}
+
+.section_header h2{
+	font-family: "Source Sans Pro";
+    letter-spacing: 2px;
+}
+
+.section_header .search-form-row{
+	margin-top: 25px;
+}
+
+.section_header .search-form-row button{
+	background-color: black;
+	border-color: black;
+}
+
+
+/* RESULT TABLE  STYLE */
+.section-result-table h4,h3{
+	color:#212A49;text-transform:uppercase;font-weight:bold;
+}

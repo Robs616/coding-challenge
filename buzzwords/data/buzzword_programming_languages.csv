@@ -1,0 +1,74 @@
+JavaScript
+Promises
+Standard Style - Style guide and linter.
+Must Watch Talks
+Tips
+Network Layer
+Micro npm Packages
+Mad Science npm Packages - Impossible sounding projects that exist.
+Maintenance Modules - For npm packages.
+npm - Package manager.
+AVA - Test runner.
+ESLint - Linter.
+Functional Programming
+Observables
+npm scripts - Task runner.
+30 Seconds of Code - Code snippets you can understand in 30 seconds.
+Ponyfills - Like polyfills but without overriding native APIs.
+"Swift - Apple's compiled programming language that is secure, modern, programmer-friendly, and fast."
+Education
+Playgrounds
+Python - General-purpose programming language designed for readability.
+Asyncio - Asynchronous I/O in Python 3.
+Scientific Audio - Scientific research in audio/music.
+CircuitPython - A version of Python for microcontrollers.
+Data Science - Data analysis and machine learning.
+Typing - Optional static typing for Python.
+MicroPython - A lean and efficient implementation of Python 3 for microcontrollers.
+Rust
+Haskell
+PureScript
+Go
+Scala
+Scala Native - Optimizing ahead-of-time compiler for Scala based on LLVM.
+Ruby
+Clojure
+ClojureScript
+Elixir
+Elm
+Erlang
+Julia - High-level dynamic programming language designed to address the needs of high-performance numerical analysis and computational science.
+Lua
+C
+"C/C++ - General-purpose language with a bias toward system programming and embedded, resource-constrained software."
+R
+D
+Common Lisp - Powerful dynamic multiparadigm language that facilitates iterative and interactive development.
+Learning
+Perl
+Groovy
+Dart
+"Java - Popular secure object-oriented language designed for flexibility to ""write once, run anywhere""."
+RxJava
+Kotlin
+OCaml
+ColdFusion
+Fortran
+PHP - Server-side scripting language.
+Composer - Package manager.
+Pascal
+Assembler
+AutoHotkey
+AutoIt
+Crystal
+Frege - Haskell for the JVM.
+"CMake - Build, test, and package software."
+ActionScript 3 - Object-oriented language targeting Adobe AIR.
+Eta - Functional programming language for the JVM.
+Idris - General purpose pure functional programming language with dependent types influenced by Haskell and ML.
+"Ada/SPARK - Modern programming language designed for large, long-lived apps where reliability and efficiency are essential."
+Q# - Domain-specific programming language used for expressing quantum algorithms.
+Imba - Programming language inspired by Ruby and Python and compiles to performant JavaScript.
+"Vala - Programming language designed to take full advantage of the GLib and GNOME ecosystems, while preserving the speed of C code."
+Coq - Formal language and environment for programming and specification which facilitates interactive development of machine-checked proofs.
+"V - Simple, fast, safe, compiled language for developing maintainable software."

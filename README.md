@@ -1,54 +1,43 @@
-# TLM Coding challenge
-(inspired by: https://github.com/coveo/backend-coding-challenge)
+# Developing Django on Repl.it
 
-## Requirements
+- Fork this template to get started
+- Simply hit run to start the server
+- The server will autoreload as needed. You don't need to restart the server manually.
 
-### Backend
-Design an API endpoint that provides a ninja name based on a list of technology buzzwords (Ex: [Awesome List](https://github.com/sindresorhus/awesome))
+## Add your first view
 
-- The endpoint is exposed at `/ninjify`
-- The search has to be deterministic
-- The search term is passed as a querystring parameter `x`
-- The endpoint returns a JSON with a ninja name
+1. Create a file under `mysite` named `views.py` with the following contents:
 
-### Frontend
-Design an user interface to input web technology buzzwords and then generate an awesome ninja name.
+```
+from django.http import HttpResponse
 
-- Responsive
-- Mobile/Desktop compatibility
 
-## "The rules"
-
-- *You can use the language and technology of your choosing.* It's OK to try something new (tell us if you do), but feel free to use something you're comfortable with. We don't care if you use something we don't; the goal here is not to validate your knowledge of a particular technology.
-- End result should be deployed on a public Cloud (Heroku, AWS etc. all have free tiers you can use).
-- The results have to be SFW and politically correct
-
-## Advices
-
-- **Try to design and implement your solution as you would do for real production code**. Show us how you create clean, maintainable code that does awesome stuff. Build something that we'd be happy to contribute to. This is not a programming contest where dirty hacks win the game.
-- Feel free to add more features! Really, we're curious about what you can think of. We'd expect the same if you worked with us.
-- Documentation and maintainability is a plus.
-- Don't you forget those unit tests.
-- We don’t want to know if you can do exactly as asked (or everybody would have the same result). We want to know what **you** bring to the table when working on a project, what is your secret sauce. More features? Best solution? Thinking outside the box?
-- Make sure you apply security good practices. _Ninjas hide their secrets because pirates will find them._
-
-## Bonuses
-- Add easter egg with the `Konami` code.
-- Permalink to share the result
-
-## Sample responses
-
-These responses are meant to provide guidance. The exact values can vary based on the data source and scoring algorithm
-
-    GET /ninjify?x=sass,rails,html
-
-```json
-{
-  "name": "Crimson Drop Shadow"
-}
+def index(request):
+    return HttpResponse("Hello, world.")
 ```
 
-## Getting Started
+2. Add a url pattern under `mysite/urls.py`. It should look like this:
 
-Begin by forking this repo and cloning your fork. GitHub has apps for [Mac](http://mac.github.com/) and
-[Windows](http://windows.github.com/) that make this easier.
+```
+from django.contrib import admin
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+]
+```
+
+## Shell
+
+Django utilizes the shell for managing your site. For this click on the `?` in the lower-right corner and click "Workspace shortcuts" from there you can open a new shell pane. 
+
+## Database
+
+By default this template utilizes the sqlite database engine. While this is fine for development it won't work with external users of your app as we don't persist changes to files when they happen outside the development environment. 
+
+We suggest bringing a database using an outside service. 
+
+See Django documentation on how to setup a database: https://docs.djangoproject.com/en/3.0/intro/tutorial02/
+
