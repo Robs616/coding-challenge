@@ -1,0 +1,1 @@
+echo 'web: gunicorn ninjawhois.wsgi --log-file -' > Procfile
